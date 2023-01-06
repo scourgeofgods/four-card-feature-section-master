@@ -32,8 +32,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 8rem;
   margin: 4rem;
+}
+.sec-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .sec-title {
   font-size: 3.2rem;
@@ -45,12 +51,13 @@ body {
   font-weight: var(--fw-semibold);
   color: var(--clr-very-dark-blue);
   letter-spacing: 0.1rem;
+
   font-size: 3.4rem;
 }
 .sec-detail {
   text-align: center;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: var(--fw-regular);
   color: var(--clr-grayish-blue);
 }
