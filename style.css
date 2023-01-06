@@ -57,7 +57,7 @@ body {
 .sec-detail {
   text-align: center;
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2.25rem;
   font-weight: var(--fw-regular);
   color: var(--clr-grayish-blue);
 }
@@ -86,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0.5rem;
-  padding: 2rem 3rem;
+  padding: 3rem;
 
   box-shadow: 0.1rem 0.1rem 1.2rem 0.7rem var(--clr-shadow);
 }
