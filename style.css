@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  --fw-semibold: 600;
+  --fw-regular: 400;
+  --fw-extralight: 200;
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-very-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+  --clr-shadow: rgba(207 198 198 / 30%);
+  --ff-body: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  font-size: 15px;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin: 4rem;
+}
+.sec-title {
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: var(--clr-grayish-blue);
+  font-weight: var(--fw-extralight);
+}
+.sec-title span {
+  font-weight: var(--fw-semibold);
+  color: var(--clr-very-dark-blue);
+  letter-spacing: 0.1rem;
+  font-size: 3.4rem;
+}
+.sec-detail {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: var(--fw-regular);
+  color: var(--clr-grayish-blue);
+}
+.sec-title span,
+.sec-detail span {
+  display: block;
+}
+.boxes {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  max-width: 35rem;
+  height: 20rem;
+  border: 1px solid var(--clr-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+
+  box-shadow: 0.1rem 0.1rem 1.2rem 0.7rem var(--clr-shadow);
+}
+.card-title {
+  color: var(--clr-very-dark-blue);
+  font-size: 1.8rem;
+}
+.card-detail {
+  color: var(--clr-grayish-blue);
+  font-size: 1.3rem;
+  font-weight: var(--fw-extralight);
+  margin-top: 1rem;
+}
+.card-cyan {
+  border-top: 5px solid var(--clr-cyan);
+}
+.card-red {
+  border-top: 5px solid var(--clr-red);
+}
+.card-orange {
+  border-top: 5px solid var(--clr-orange);
+}
+.card-blue {
+  border-top: 5px solid var(--clr-blue);
+}
+.card-img {
+  align-self: flex-end;
+  width: 5rem;
+  height: 5rem;
+}
+
+@media (max-width: 992px) {
+  .boxes {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sec-detail,
+  .sec-title {
+    text-align: center;
+  }
+}
